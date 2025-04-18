@@ -1,0 +1,189 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "DroidOXY Documentation",
+  "logo": {
+    "dark": "/logo/favicon.png",
+    "light": "/logo/favicon.png"
+  },
+  "favicon": "/logo/favicon.png",
+  "colors": {
+    "primary": "#0057FF",
+    "light": "#4281FF",
+    "dark": "#0057FF",
+    "anchors": {
+      "from": "#0D9373",
+      "to": "#07C983"
+    }
+  },
+  "layout": "sidenav",
+  "background": {
+    "style": "grid"
+  },
+  "sidebar": {
+    "items": "border"
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "https://droidoxy.com/support/"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Buy now",
+    "url": "https://droidoxy.com?utm_source=docs&utm_medium=header",
+    "arrow": true,
+    "style": "roundedRectangle",
+    "type": "link"
+  },
+  "primaryTab": {
+    "name": "Documentation"
+  },
+  "tabs": [
+    {
+      "name": "Android App",
+      "url": "android"
+    },
+    {
+      "name": "IOS App",
+      "url": "ios"
+    },
+    {
+      "name": "API Reference",
+      "url": "api-guide"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Refer & Earn",
+      "icon": "dollar-sign",
+      "url": "https://droidoxy.com/refer-and-earn/"
+    },
+    {
+      "name": "Support",
+      "icon": "question",
+      "url": "https://droidoxy.com/support/"
+    },
+    {
+      "name": "Feature Requests",
+      "icon": "star",
+      "url": "https://droidoxy.canny.io/"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "get-started/introduction",
+        "get-started/get-pocket",
+        "get-started/file-structure",
+        "get-started/server-requirements",
+        "get-started/installation",
+        "get-started/troubleshooting",
+        "get-started/initial-setup"
+      ]
+    },
+    {
+      "group": "Mobile Apps",
+      "pages": [
+        "web/android-app",
+        "web/ios-app"
+      ]
+    },
+    {
+      "group": "Website Basics",
+      "pages": [
+        "web/essentials",
+        "web/branding"
+      ]
+    },
+    {
+      "group": "Email",
+      "pages": [
+        "web/mailer",
+        "web/smtp",
+        "web/email-templates"
+      ]
+    },
+    {
+      "group": "Proxy Detection",
+      "pages": [
+        "web/proxy-detectioon"
+      ]
+    },
+    {
+      "group": "Geo Location",
+      "pages": [
+        "web/geo-detection"
+      ]
+    },
+    {
+      "group": "Authentication",
+      "pages": [
+        "web/google-login",
+        "web/facebook-login",
+        "web/captha"
+      ]
+    },
+    {
+      "group": "Offerwall Networks",
+      "pages": [
+        "offerwalls/admanum",
+        "offerwalls/rubicko",
+        "offerwalls/adscend-media",
+        "offerwalls/cpalead",
+        "offerwalls/kiwiwall"
+      ]
+    },
+    {
+      "group": "Postbacks",
+      "pages": [
+        "postbacks/network-postbacks",
+        "postbacks/global-postbacks"
+      ]
+    },
+    {
+      "group": "Advanced",
+      "pages": [
+        "web/localisation"
+      ]
+    },
+    {
+      "group": "Versioning",
+      "pages": [
+        "web/how-to-update"
+      ]
+    },
+    {
+      "group": "Android Setup",
+      "pages": [
+        "android/introduction"
+      ]
+    },
+    {
+      "group": "IOS Setup",
+      "pages": [
+        "ios/introduction"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-guide/overview"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "website": "https://droidoxy.com?utm_source=docs&utm_medium=footer",
+    "x": "https://x.com/OxyWebSolutions",
+    "github": "https://github.com/droidoxy",
+    "youtube": "https://www.youtube.com/@droidoxy1947"
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
+  "seo": {
+    "indexHiddenPages": true
+  }
+}
