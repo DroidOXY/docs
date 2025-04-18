@@ -40,11 +40,11 @@
   },
   "tabs": [
     {
-      "name": "Android App",
+      "name": "Android",
       "url": "android"
     },
     {
-      "name": "IOS App",
+      "name": "IOS",
       "url": "ios"
     },
     {
