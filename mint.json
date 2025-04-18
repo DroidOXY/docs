@@ -85,8 +85,8 @@
     {
       "group": "Mobile Apps",
       "pages": [
-        "android/introduction",
-        "ios/introduction"
+        "web/android-app",
+        "web/ios-app"
       ]
     },
     {
@@ -105,28 +105,25 @@
       ]
     },
     {
-      "group": "Proxy Detection",
+      "group": "Proxy & Geo",
       "pages": [
-        "web/proxy-detectioon"
-      ]
-    },
-    {
-      "group": "Geo Location",
-      "pages": [
+        "web/proxy-detection",
         "web/geo-detection"
       ]
     },
     {
       "group": "Authentication",
       "pages": [
-        "web/google-login",
-        "web/facebook-login",
+        "web/accounts-settings",
+        "web/identity-providers/google",
+        "web/identity-providers/facebook",
         "web/captha"
       ]
     },
     {
-      "group": "Offerwall Networks",
+      "group": "Offerwalls Integration",
       "pages": [
+        "offerwalls/introduction",
         "offerwalls/admanum",
         "offerwalls/rubicko",
         "offerwalls/adscend-media",
@@ -135,15 +132,9 @@
       ]
     },
     {
-      "group": "Postbacks",
-      "pages": [
-        "postbacks/network-postbacks",
-        "postbacks/global-postbacks"
-      ]
-    },
-    {
       "group": "Advanced",
       "pages": [
+        "web/postbacks",
         "web/localisation"
       ]
     },
