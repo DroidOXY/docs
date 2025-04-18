@@ -85,8 +85,8 @@
     {
       "group": "Mobile Apps",
       "pages": [
-        "web/android-app",
-        "web/ios-app"
+        "android/introduction",
+        "ios/introduction"
       ]
     },
     {
