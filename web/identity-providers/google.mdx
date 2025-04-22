@@ -37,17 +37,29 @@ Before you begin, ensure you have admin access to your Pocket Script application
   7. From the **Application type**, select the `Web application`, enter **Authorized JavaScript origins** and click **Create** button
       1. Authorized JavaScript origins
           <Warning>Authorized JavaScript origins will be your website URL</Warning>
-          - Whether you install the script in the main domain or a subfolder, the final URL here will be your main domain. Enter your URL as: `https://example.com`
-          - In case of a subdomain, enter your URL as: `https://subdomain.example.com`
+          - Whether you install the script in the main domain or a subfolder, the final URL here will be your main domain. Enter your URL as: 
+              ```
+              https://example.com
+              ```
+          - In case of a subdomain, enter your URL as: 
+              ```
+              https://subdomain.example.com
+              ```
 
       2. Authorized redirect URIs
           <Warning>For Authorized redirect URIs, append `admin/controller/oauth.php` to your website URL</Warning>
-          - For the main domain install at `example.com`, enter your URL as: 
+          - For the main domain install at _example.com_, enter your URL as: 
               ```
               https://example.com/admin/controller/oauth.php
               ```
-          - For sub-domain install at `subdomain.example.com`, enter your URL as ```https://subdomain.example.com/controller/oauth.php```
-          - For subfolder install at `example.com/subfolder,` enter your URL as  ```https://example.com/subfolder/controller/oauth.php```
+          - For sub-domain install at _subdomain.example.com_, enter your URL as 
+              ```
+              https://subdomain.example.com/controller/oauth.php
+              ```
+          - For subfolder install at _example.com/subfolder_, enter your URL as  
+              ```
+              https://example.com/subfolder/controller/oauth.php
+              ```
 
       ![Google Console 5](/images/web/google/google_console_5.png)
 
