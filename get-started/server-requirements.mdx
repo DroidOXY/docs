@@ -1,6 +1,96 @@
 ---
 title: Server Requirements
-description: Demo Setup instructions
+description: Ensure your server meets these requirements for a smooth installation of Pocket Script.
 ---
 
-Coming Soon
+This page outlines the necessary components and configurations to ensure your server is ready to host Pocket Script efficiently. Whether you're a seasoned developer or new to server management, we've got you covered with clear, easy-to-follow instructions.
+
+## Core Requirements
+
+### PHP and MySQL Versions
+
+Pocket Script requires up-to-date versions of PHP and MySQL to ensure optimal performance and security:
+
+<CardGroup cols={2}>
+  <Card title="PHP Version" icon="php">
+    8.1 or later
+  </Card>
+</CardGroup>
+
+<Note>
+  Using the latest stable versions is recommended for the best experience and to take advantage of the newest features and security updates.
+</Note>
+
+### Essential PHP Extensions
+
+To run Pocket Script smoothly, make sure your PHP installation includes these extensions:
+
+<Accordion title="Click to view required PHP extensions" defaultOpen="true">
+  - exif
+  - pdo
+  - zip
+</Accordion>
+
+<Tip>
+  Most of these extensions are typically included in standard PHP installations. If you're unsure, consult your hosting provider or server administrator.
+</Tip>
+
+## Minimum Server Requirements
+
+To ensure optimal performance of Pocket Script, we recommend the following minimum server specifications:
+
+<CardGroup cols={2}>
+  <Card title="Memory" icon="memory">
+    2 GB RAM or more
+  </Card>
+  <Card title="CPU" icon="microchip">
+    2 vCPUs or more
+  </Card>
+</CardGroup>
+
+<Note>
+  For our demo environment, we use a VPS with 2 GB Memory and 2 Intel vCPUs on DigitalOcean. This setup provides excellent performance for most use cases.
+</Note>
+
+### Hosting Recommendations
+
+Pocket Script can run on various hosting environments, including shared hosting provided by Namecheap, GoDaddy, Hostinger, A2hosting, etc
+
+<Warning>Reached more than 1M users? We strongly recommend using a Virtual Private Server (VPS) for better control and performance.</Warning>
+
+<Note>
+  While most shared hosting environments are supported, they may have limitations that could affect Pocket Script's performance once you cross a certain active users. For the best experience, we strongly advise using a VPS.
+</Note>
+
+<Tip>Please reach out to our support team if you need a managed VPS maintenance service. We'll help you spin up a server and manage it regularly for a small monthly price</Tip>
+
+## Web Server Compatibility
+
+Pocket Script is designed to work with popular web servers, ensuring flexibility in your hosting setup:
+
+<CardGroup cols={2}>
+  <Card title="Apache" icon="server">
+    Fully tested and supported
+  </Card>
+  <Card title="Nginx" icon="server">
+    Fully tested and supported
+  </Card>
+</CardGroup>
+
+While Apache and Nginx are our primary supported web servers, Pocket Script is built to be compatible with most standard web server configurations.
+
+<Tip>
+  New to web server setup? Check out these helpful guides:
+  - [How to install Apache](https://httpd.apache.org/docs/2.4/install.html)
+  - [How to install Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/)
+</Tip>
+
+## Next Steps
+
+Once you've confirmed that your server meets these requirements, you're ready to move on to the installation process!
+
+<Card title="Installation Guide" icon="rocket" href="/get-started/installation">
+  Learn how to install Pocket Script on your server
+</Card>
+
+If you encounter any issues or have questions about server requirements, our support team is here to help. Don't hesitate to [reach out to our support team](https://droidoxy.com/support/).
