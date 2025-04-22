@@ -35,6 +35,8 @@ Before you begin, ensure you have admin access to your Pocket Script application
       [Google Console 4 Pn](/images/web/google/google_console_4.png)
 
   7. From the **Application type**, select the `Web application`, enter **Authorized JavaScript origins** and click the button **Create**
+      -- Authorized JavaScript origins
+          Authorized JavaScript origins will be your website URL
 
       <Warning>
         Authorized JavaScript origins will be your website URL
@@ -44,19 +46,15 @@ Before you begin, ensure you have admin access to your Pocket Script application
       In case of a subdomain, it’ll be: `https://subdomain.example.com`
 
   <Warning>
-    Note-2 : Authorized redirect URIs will be changed here. we just append ‘admin/controller/oauth.php’ to your script URL.
+    For Authorized redirect URIs, append `admin/controller/oauth.php` to your script URL
   </Warning>
-  ## Example -2 :
 
-  [**https://example.com/admin/controller/oauth.php**](https://example.com/admin/controller/oauth.php)
+Then your domain `example.com` becomes : `https://example.com/admin/controller/oauth.php`
 
-  For sub-domain install at [**https://subdomain.example.com**](https://subdomain.example.com) 
+And for sub-domain install at `subdomain.example.com` becomes `https://subdomain.example.com/controller/oauth.php`
 
-  it’ll become : [**https://subdomain.example.com/controller/oauth.php**](https://subdomain.example.com/controller/oauth.php)
+And for subfolder install at `example.com/subfolder` becomes  `https://example.com/subfolder/controller/oauth.php`
 
-  For subfolder install at [**https://example.com/subfolder**](https://example.com/subfolder)
-
-  it’ll become : [**https://example.com/subfolder/controller/oauth.php**](https://example.com/subfolder/controller/oauth.php)
 
 ![Google Console 5 Pn](/images/google_console_5.png)
 
