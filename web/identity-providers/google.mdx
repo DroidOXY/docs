@@ -1,6 +1,69 @@
 ---
 title: Google Login
-description: Demo Setup instructions
+description: 'Seamlessly integrate Google OAuth 2.0 authentication into your Pocket Script application, allowing users to log in with their Google accounts.
 ---
 
-Coming Soon
+This guide walks you through the setup process, from creating a Google API project to configuring Pocket Script for a smooth "Login with Google" experience.
+
+## Overview
+
+Integrating Google as an identity provider offers your users a convenient and secure way to access your Pocket Script application. This feature leverages Google's OAuth 2.0 protocol, ensuring a streamlined authentication process while maintaining high security standards.
+
+<Note>
+Before you begin, ensure you have admin access to your Pocket Script application and a Google account for setting up the OAuth integration.
+</Note>
+
+## Getting Google Client ID and Client Secret
+
+  1. Go to  https://console.developers.google.com/apis
+  2. Navigate to the `Credentials` tab
+
+      [Google Console 1](/images/web/google/google_console_1.png)
+
+  3. Click `Select a project --> New Project` and then click the button `Create` OR if you've created a Firebase project while setting up the **Pocket Android App**, then you can select the existing project and **skip to Step 6**
+
+  4. Navigate to the tab **OAuth consent screen**
+
+      [Google Console 2 Pn](/images/web/google/google_console_2.png)
+
+  5. Enter the **Application name**, **Authorized domains** and click the button **Save**
+
+  [Google Console 3 Pn](/images/web/google/google_console_3.png)
+
+  6. Click the button `Create Credentials` and from the dropdown list select `OAuth client ID`
+
+      [Google Console 4 Pn](/images/web/google/google_console_4.png)
+
+  7. From the **Application type**, select the `Web application`, enter **Authorized JavaScript origins** and click the button **Create**
+
+      <Warning>
+        Authorized JavaScript origins will be your website URL
+      </Warning>
+
+      Whether you install the script in the main domain or a subfolder, the final URL here will be your main domain, like: `https://example.com`
+      In case of a subdomain, it’ll be: `https://subdomain.example.com`
+
+  <Warning>
+    Note-2 : Authorized redirect URIs will be changed here. we just append ‘admin/controller/oauth.php’ to your script URL.
+  </Warning>
+  ## Example -2 :
+
+  [**https://example.com/admin/controller/oauth.php**](https://example.com/admin/controller/oauth.php)
+
+  For sub-domain install at [**https://subdomain.example.com**](https://subdomain.example.com) 
+
+  it’ll become : [**https://subdomain.example.com/controller/oauth.php**](https://subdomain.example.com/controller/oauth.php)
+
+  For subfolder install at [**https://example.com/subfolder**](https://example.com/subfolder)
+
+  it’ll become : [**https://example.com/subfolder/controller/oauth.php**](https://example.com/subfolder/controller/oauth.php)
+
+![Google Console 5 Pn](/images/google_console_5.png)
+
+- Copy your **Client ID** and **Secret Key**.
+
+  ![Google Console 6 Pn](/images/google_console_6.png)
+
+  Finally Paste the copied keys in your **Admin Panel —\> Settings —\> Configuration —\> Google Login**
+
+  **​That’s it ..\!**
