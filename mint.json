@@ -83,10 +83,12 @@
       ]
     },
     {
-      "group": "Add Ons & Mobile Apps",
+      "group": "Add-ons & Mobile Apps",
       "pages": [
-        "web/android-app",
-        "web/ios-app"
+        "add-ons/android-app",
+        "add-ons/ios-app",
+        "add-ons/custom-videos",
+        "add-ons/custom-offers",
       ]
     },
     {
