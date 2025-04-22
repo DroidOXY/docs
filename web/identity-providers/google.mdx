@@ -37,14 +37,14 @@ Before you begin, ensure you have admin access to your Pocket Script application
   7. From the **Application type**, select the `Web application`, enter **Authorized JavaScript origins** and click **Create** button
       1. Authorized JavaScript origins
           <Warning>Authorized JavaScript origins will be your website URL</Warning>
-          - Whether you install the script in the main domain or a subfolder, the final URL here will be your main domain. Enter your url as: `https://example.com`
-          - In case of a subdomain, enter as: `https://subdomain.example.com`
+          - Whether you install the script in the main domain or a subfolder, the final URL here will be your main domain. Enter your URL as: `https://example.com`
+          - In case of a subdomain, enter your URL as: `https://subdomain.example.com`
 
-      2. For Authorized redirect URIs
-          <Warning>For Authorized redirect URIs, append `admin/controller/oauth.php` to your script URL</Warning>
-          - For Authorized redirect URIs, enter your domain `example.com` as: `https://example.com/admin/controller/oauth.php`
-          - For sub-domain install at `subdomain.example.com` enter as `https://subdomain.example.com/controller/oauth.php`
-          - For subfolder install at `example.com/subfolder` enter as  `https://example.com/subfolder/controller/oauth.php`
+      2. Authorized redirect URIs
+          <Warning>For Authorized redirect URIs, append `admin/controller/oauth.php` to your website URL</Warning>
+          - For the main domain install at `example.com`, enter your URL as: `https://example.com/admin/controller/oauth.php`
+          - For sub-domain install at `subdomain.example.com`, enter your URL as `https://subdomain.example.com/controller/oauth.php`
+          - For subfolder install at `example.com/subfolder,` enter your URL as  `https://example.com/subfolder/controller/oauth.php`
 
       ![Google Console 5](/images/web/google/google_console_5.png)
 
@@ -54,11 +54,11 @@ Before you begin, ensure you have admin access to your Pocket Script application
 
 ## Final Steps
 
-Paste the copied keys in your admin panle by following the below steps
+Paste the copied keys in your admin panel by following the steps below
 
   - Log in to your Admin Interface (Pocket script instance)
-  - Navigate to `Settings —-> Configuration --> Web App Configuration` from the admin sidebar
-  - Scroll down to `Social Login` Section
-  - And Paste the copied `Google Client Id` and `Google Secret Id`
+  - Navigate to `Settings -> Configuration -> Web App Configuration` from the admin sidebar
+  - Scroll down to the `Social Login` Section
+  - And paste the copied `Google Client Id` and `Google Secret Id`
 
 ​That’s it!
