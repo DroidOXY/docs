@@ -101,7 +101,6 @@
     {
       "group": "Email",
       "pages": [
-        "web/mailer",
         "web/smtp",
         "web/email-templates"
       ]
