@@ -1,7 +1,102 @@
 ---
 title: Installation Troubleshooting
 sidebarTitle: Troubleshooting
-description: Demo Setup instructions
+description: Resolve common issues encountered during the Pocket Script installation process with our comprehensive troubleshooting guide.
 ---
 
-Coming Soon
+If you're experiencing difficulties during the Pocket Script installation process, this guide will help you identify and resolve common issues. We'll cover various problems you might encounter and provide step-by-step solutions.
+
+## Before You Begin
+
+Before diving into specific issues, ensure that:
+
+1. Your server meets all the [requirements](/get-started/server-requirements) for Pocket Script.
+2. You have the latest version of Pocket Script files.
+3. You've carefully followed the steps in our [main installation guide](/get-started/installation).
+
+## Common Issues and Solutions
+
+<AccordionGroup>
+  <Accordion title="Database Connection Issues">
+    If you can't connect to the database during installation:
+
+    1. **Verify Credentials**: Double-check your database credentials:
+       - Database name
+       - Username
+       - Password
+       - Host (usually 'localhost' for most setups)
+
+    2. **Database Server**: Ensure the database server is running and accessible from your web server.
+
+    3. **User Permissions**: Verify that the database user has the necessary permissions:
+       - SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER
+
+    4. **Database Existence**: Confirm that the specified database exists and is empty.
+
+    5. **PHP Extensions**: Check that required PHP database extensions (e.g., `pdo` for MySQL PDO) are installed and enabled.
+
+    If problems continue, try creating a new database and user, or consult your hosting provider's database management tools.
+  </Accordion>
+
+  <Accordion title="Config File Writable : NO - NOT OK">
+    If the config file is not writable during installation:
+
+    1. **Check Config File**: Confirm the existence of the config file locating at admin/core/config.php and permissions set to 0644
+
+    2. **File Permissions**: Verify that the web server has appropriate permissions:
+       - Read access to all files
+       - Execute access to directories
+            - [Read More on File Permissions](https://www.namecheap.com/support/knowledgebase/article.aspx/400/205/file-permissions/)
+
+    If problems continue, consider starting with a fresh upload, ensuring you're using the latest Pocket Script files.
+  </Accordion>
+  <Accordion title="404 Error at /install or 403 Error at Home Page">
+    If you encounter these errors:
+
+    1. **Check Files**: Confirm that all Pocket Script files are extracted correctly and in the right location.
+
+    2. **File Permissions**: Verify that the web server has appropriate permissions:
+       - Read access to all files
+       - Execute access to directories
+            - [Read More on File Permissions](https://www.namecheap.com/support/knowledgebase/article.aspx/400/205/file-permissions/)
+
+    If issues persist, double-check your web server configuration and consult your hosting provider's documentation.
+  </Accordion>
+
+  <Accordion title="500 Internal Server Error">
+    If you encounter a 500 Internal Server Error before or after installation:
+
+    1. **Error Logs**: Check your server's error logs for specific error messages. Common locations:
+       - Apache: `/var/log/apache2/error.log` or `/var/log/httpd/error_log`
+       - Nginx: `/var/log/nginx/error.log`
+
+    2. **PHP Version**: Verify PHP version compatibility and ensure all required PHP extensions are installed.
+
+    If the issue persists, enable PHP error reporting temporarily to get more detailed error messages.
+  </Accordion>
+
+</AccordionGroup>
+
+## Additional Troubleshooting Steps
+
+If you're still experiencing issues after trying the solutions above:
+
+1. **Fresh Installation**: Consider starting with a fresh installation, ensuring you're using the latest Pocket Script files.
+
+2. **Server Configuration**: Review your web server configuration (Apache, Nginx) to ensure it's set up correctly for PHP applications.
+
+3. **Hosting Environment**: If you're on shared hosting, contact your hosting provider to ensure there are no restrictions or issues on their end.
+
+## Getting Further Help
+
+If you've tried all the above solutions and are still facing issues:
+
+1. Gather all relevant information:
+   - Exact error messages
+   - Server specifications
+   - PHP version and installed extensions
+   - Steps to reproduce the issue
+
+2. Open a ticket on our [support forum](https://www.droidoxy.com/support/) with the gathered information.
+
+Remember, most installation issues can be resolved by carefully reviewing each step of the installation process and ensuring all requirements are met. With patience and attention to detail, you'll have Pocket Script running smoothly in no time!
