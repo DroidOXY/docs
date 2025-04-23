@@ -1,0 +1,126 @@
+---
+title: OGAds Offerwall Integration
+sidebarTitle: OGAds
+description: Seamlessly integrate OGAds Offerwall into your Pocket Script application
+---
+
+## Getting Started
+
+    You can purchase the add-on from our official website : [Get OGADS [Add-on]](https://www.droidoxy.com/item/ogads-offerwall/)
+        
+### Add-on Installation
+<Steps>
+  <Step title="Log in to your Hosting/cPanel">
+    1. Go to `yourdomain.com/cpanel`
+    2. Enter your **username** and **password**
+    Alternatively, you can use an FTP client as well.
+  </Step>
+
+  <Step title="Upload the Files">
+    Locate the `addon-ogads-offerwall.zip` file from the downloaded package
+      - Upload the contents of `addon-ogads-offerwall.zip` inside the `admin -> addons` folder
+  </Step>
+
+  <Step title="Log in to Pocket Admin Interface">
+    Open your web browser and navigate to your Pocket Script admin dashboard.
+      - You'll be shown an alert to activate the addon
+      - Click the Activate Button on the alert to activate the addon
+      - Once Activated, navigate to Offerwalls Section on the Admin sidebar and click on edit OGAds Offerwall
+  </Step>
+</Steps>
+
+### Pre-requirements
+
+To Intergrate OGAds offerwall, you'll need the following:
+    
+    1. OGAds Account 
+        - Create An [OGAds Account](https://members.ogads.com/login)
+    2. OfferwallInc Account
+        - Create An [OfferwallInc Account](https://offerwallinc.com/dashboard/)
+    3. Postback URL for OGAds Network
+        - Login to Admin Interface (Pocket Script instance)
+        - Navigate to `Offerwalls -> All Offerwalls` on the admin sidebar
+        - Click on `Edit OGAds Offerwall`
+        - Scroll down to Postback URL Section and copy the OGAds Postback URL
+
+    
+### Getting OGADS Ids
+
+    To Intergrate OGADS offerwall, you’ll need the following Ids from OGADS : 
+    - Affiliate Id
+    - Offers API KEY
+    
+    Please follow the below steps to get the required Ids
+
+    1. Login into your **_OGADS Dashboard_**
+    
+    2. Click on account drop-down menu to copy the `Affiliate Id`
+
+        ![OGADS 1](/images/networks/ogads/ogads_1.png)
+
+    3. Navigate to `Tools --> Offers API` from top menu and click on `Generate API Key`
+    
+        ![OGADS 2](/images/networks/ogads/ogads_2.png)
+        
+    4. Finally, Copy the `API KEY` 
+
+        ![OGADS 3](/images/networks/ogads/ogads_3.png)
+        
+### Getting OfferwallInc Ids
+
+    To Intergrate OGADS offerwall, you’ll need the following Ids from OfferwallInc : 
+    - Wall Id
+    - Points Ratio
+    
+    Please follow the below steps to get the required Ids
+
+    1. Login into your **_[OfferwallInc Dashboard](https://offerwallinc.com/dashboard/)_**
+    
+    2. Click on `Create Offerwall` button to get started
+
+        ![OFWL 1](/images/networks/offerwallinc/offerwallinc_ogads_1.png)
+
+    3. Enter your website and other details and click **Next**
+    
+        ![OFWL 2](/images/networks/offerwallinc/offerwallinc_ogads_2.png)
+        
+    4. Enter your OGADS `Aff Id` and `API KEY` and click **Next**
+    
+        ![OFWL 3](/images/networks/offerwallinc/offerwallinc_ogads_3.png)
+        
+    5. Upon offerwall creation, click on the `Let's Customize` button
+
+        ![OFWL 4](/images/networks/offerwallinc/offerwallinc_ogads_4.png)
+        
+    6. Finally, Copy the `WALL ID` 
+    
+        ![OFWL 5](/images/networks/offerwallinc/offerwallinc_ogads_5.png)
+        
+        
+## Integrating Offerwall
+
+    1. Login to Admin Interface (Pocket Script instance)
+    2. Navigate to `Offerwalls -> All Offerwalls` on the admin sidebar
+    3. Select and Edit OGAds Offerwall and scroll down to Id's Section
+    4. Paste the copied _offerwallinc's_ `Wall Id`, _OGADS's_ `Affiliate Id` and `Points Ratio` exactly same as given in _offerwallinc.com_ and click on the **Save Changes** button to complete the integration
+    
+         ![OGADS 4](/images/networks/ogads/ogads_4.png)
+         
+## Postback Setup
+    
+    Follow the below steps to seup postbacks on the OGADS platform
+
+    1. Login to your **_OGADS Dashboard_**
+    2. Go to `Tools -> Postback URL` on the top menu
+        
+         ![OGADS 5](/images/networks/ogads/ogads_5.png)
+    
+    3. Enter the copied `Postback URL` form the pocket admin Interface and save
+
+        ![OGADS 6](/images/networks/ogads/ogads_6.png)
+
+That's it!
+
+import HelpSnippet from '/snippets/help.mdx';
+
+<HelpSnippet/>
