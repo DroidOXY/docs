@@ -1,6 +1,75 @@
 ---
 title: Facebook Login
-description: Demo Setup instructions
+description: 'Seamlessly integrate Facebook OAuth 2.0 authentication into your Pocket Script application, allowing users to log in with their Facebook accounts. This guide walks you through the setup process, from creating a Facebook App to configuring Pocket Script for a smooth "Login with Facebook" experience.'
 ---
 
-Coming Soon
+## Overview
+
+Integrating Facebook as an identity provider offers your users a convenient and secure way to access your Pocket Script application. This feature leverages Facebook's OAuth 2.0 protocol, ensuring a streamlined authentication process while maintaining high security standards.
+
+<Warning>Your domain must have a valid SSL certificate installed for the Facebook login to work</Warning>
+
+## Getting Facebook App ID and Secret Key ?
+
+    1. Log in to [Facebook for Developers](https://developers.facebook.com/) and either select an existing app or create a New App
+    
+        <Note>if you already have an existing app then **skip to step 3**</Note>
+
+        ![Facebook Console 1](/images/web/fb/facebook_console_1.png)
+
+2. Create a New App
+
+    ![Facebook Console 2](/images/web/fb/facebook_console_2.png)
+
+3. Then Setup Facebook Login
+
+    ![Facebook Console 3](/images/web/fb/facebook_console_3.png)
+
+4. Select `Web` as we are configuring Facebook login for the web version
+
+    ![Facebook Console 4](/images/web/fb/facebook_console_4.png)
+
+5. Give your site URL and click on `save`
+    - You can ignore the other quickstart steps
+    - Navigate to `Settings -> Basic` on the sidebar
+
+    ![Facebook Console 5](/images/web/fb/facebook_console_5.png)
+
+6. Simply copy your `App ID` and `App Secret`
+
+    ![Facebook Console 6](/images/web/fb/facebook_console_6.png)
+
+7. Finally, Go to  **Facebook Login -> Settings**  (No. 4 in the above image) to add a valid **OAuth redirect URL** to finalize our settings
+
+    <Warning>For Valid OAuth redirect URIs, append `admin/controller/oauth.php` to your website URL</Warning>
+    - For the main domain install at **_example.com_**, enter your URL as: 
+    
+        ```
+        https://example.com/admin/controller/oauth.php
+        ```
+    - For sub-domain install at **_subdomain.example.com_**, enter your URL as 
+        ```
+        https://subdomain.example.com/controller/oauth.php
+        ```
+    - For subfolder install at **_example.com/subfolder_**, enter your URL as  
+        ```
+        https://example.com/subfolder/controller/oauth.php
+        ```
+    
+    ![Facebook Console 7 Pn](/images/web/fb/facebook_console_7.png)
+
+
+## Final Steps
+
+Paste the copied keys in your admin panel by following the steps below
+
+  - Log in to your Admin Interface (Pocket script instance)
+  - Navigate to `Settings -> Configuration -> Web App Configuration` from the admin sidebar
+  - Scroll down to the `Social Login` Section
+  - And paste the copied `Facebook App ID` and `Facebook Secret Key`
+
+​That’s it!
+
+import HelpSnippet from '/snippets/help.mdx';
+
+<HelpSnippet/>
